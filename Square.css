@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    animation: move 10s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        top: 0;
+        left: 0;
+        background-color: red;
+    }
+    25% {
+        top: 0;
+        left: calc(100% - 100px);
+        background-color: green;
+    }
+    50% {
+        top: calc(100% - 100px);
+        left: calc(100% - 100px);
+        background-color: blue;
+    }
+    75% {
+        top: calc(100% - 100px);
+        left: 0;
+        background-color: yellow;
+    }
+    100% {
+        top: 0;
+        left: 0;
+        background-color: red;
+    }
+}
